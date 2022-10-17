@@ -1,19 +1,24 @@
-from distutils.core import setup
+from setuptools import setup
 
 setup(
-  name = 'cluscompy',         
-  packages = ['cluscompy'],   
+  name = 'cluspy',         
+  packages = ['cluspy'],   
   version = '0.1',      
   license='MIT',        
   description = 'Library for simulating cluster generation and computation for Measurement-Based Quantum Computation (MBQC).',   
   author = 'Emil Ostergaard',                   
   author_email = 'ee.ostergaard@gmail.com',     
   url = 'https://github.com/EmilOstergaard/cluspy',   
-  download_url = '',    
+  download_url = 'https://github.com/EmilOstergaard/cluspy/archive/refs/tags/v_01.tar.gz',    
   keywords = ['cluster', 'quantum', 'measurement-based quantum computation'],   
   install_requires=[            
-          '',
-          '',
+          'numpy',
+          'math',
+          'scipy',
+          'matplotlib',
+          'mpl_toolkits',
+          'cmath',
+          'copy',
       ],
   classifiers=[
     'Development Status :: 3 - Alpha',      # Chose either "3 - Alpha", "4 - Beta" or "5 - Production/Stable" as the current state of your package
